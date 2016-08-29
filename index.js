@@ -16,7 +16,6 @@ var api = new ParseServer({
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'Kid+',
   masterKey: process.env.MASTER_KEY || 'master', //Add your master key here. Keep it secret!
-  clientKey: process.env.CLIENT_KEY || 'fock'
   serverURL: process.env.SERVER_URL || 'https://afternoon-plateau-16982.herokuapp.com/',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
